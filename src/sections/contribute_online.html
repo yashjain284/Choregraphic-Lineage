@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Contribute Online | Choreographic Lineage</title>
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Asap">
+		<link rel="stylesheet" href="../css/global.css">
+	</head>
+
+	<body>
+		<header class="row column text-center">
+			<img src="../data/images/logo_dcl_2.png" alt="choreographic lineage logo">
+		</header>
+
+		<nav class="row column menu-centered">
+			<ul class="vertical medium-horizontal menu">
+				<li><a href="../">Home</a></li>
+				<li><a href="contribute.html">Contribute Your Lineage</a></li>
+				<li><a href="#">Explore the Network</a></li>
+				<li><a href="#">Query</a></li>
+			</ul>
+		</nav>
+
+		<div class="row">
+			<div class="medium-8 column">
+				<section>
+					<form action="#" data-abide novalidate>
+						<fieldset>
+							<legend>Please tell us who you are</legend>
+							<div data-abide-error class="alert callout" style="display: none;">
+								<p><i class="fi-alert"></i> There are some errors in the form.</p>
+							</div>
+							<div class="row">
+								<div class="medium-6 column">
+									<label>First Name <small>Required</small>
+										<input type="text" name="contributor-fName" required pattern="alpha">
+										<span class="form-error">
+											Required field. Alpha only.
+										</span>
+									</label>
+								</div>
+								<div class="medium-6 column">
+									<label>Last Name <small>Required</small>
+										<input type="text" name="contributor-lName" required pattern="alpha">
+										<span class="form-error">
+											Required field. Alpha only.
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 column">
+									<label>Email <small>Required</small>
+										<input type="text" name="contributor-email" required pattern="email">
+										<span class="form-error">
+											Required field. Format: xyz@example.com
+										</span>
+									</label>
+								</div>
+							</div>
+							<div class="row">
+								<div class="small-12 column">
+									<label>Phone
+										<input type="text" name="contributor-phone" pattern="number">
+										<span class="form-error">
+											Numbers only.
+										</span>
+									</label>
+								</div>
+							</div>
+								<div class="row"> <!--another artist button needs functionality-->
+								<div class="small-12 column">
+								<label>Type of Contributer
+								<p></p>
+								<input type="radio" name="Artist" value="Artist"> Self<br> 
+								<input type="radio" name="Artist" value="Another Artist>"> Another Artsit<br>
+								</label>
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</section>
+			</div>
+		</div>
+
+		<footer class="row">
+			<div>
+				<div class="medium-6 column">
+					<ul class="vertical medium-horizontal menu">
+						<li><a href="../">Home</a></li>
+						<li><a href="#">FAQ</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="#">Help</a></li>
+					</ul>
+				</div>
+				<div class="medium-6 column">
+					<ul class="menu align-right">
+						<li class="menu-text"><small>Choreographic Lineage © 2015</small></li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+		<script>
+			$(document).foundation();
+		</script>
+
+	</body>
+</html>

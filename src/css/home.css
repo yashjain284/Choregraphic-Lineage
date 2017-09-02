@@ -1,0 +1,10 @@
+/* Only styles specific to index.html */
+.fi-social-twitter {
+    color: #00aced;
+    font-size: 5rem;
+}
+
+.fi-social-facebook {
+    color: #3b5998;
+    font-size: 5rem;
+}

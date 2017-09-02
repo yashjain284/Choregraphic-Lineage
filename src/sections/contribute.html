@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contribute | Choreographic Lineage</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css">
+    <link rel="styleshet" href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Asap">
+    <link rel="stylesheet" href="../css/global.css">
+  </head>
+
+  <body>
+    <header class="row column text-center">
+      <img src="../data/images/logo_dcl_2.png" alt="choreographic lineage logo">
+    </header>
+
+    <nav class="row column menu-centered">
+      <ul class="vertical medium-horizontal menu">
+        <li><a href="../">Home</a></li>
+        <li><a href="#">Contribute Your Lineage</a></li>
+        <li><a href="#">Explore the Network</a></li>
+        <li><a href="#">Query</a></li>
+      </ul>
+    </nav>
+
+    <div class="row">
+      <div class="column text-justify">
+        <section>
+          <h3>Welcome</h3>
+          <p>Thank you in advance for contributing your lineage. Your contribution is vital to building a global resource for dance. The amount of time it will take to fill out this form will vary depending on how many artists you include in your lineage. We encourage you to take time to include all of the people you have studied with, danced for, collaborated with and been influenced by so that this resource can most accurately represent the rich network of our field. You can work on the form over time by saving it and coming back to finish it when you are ready.</p>
+        </section>
+        <section>
+          <h3>Join the Network</h3>
+          <p>
+            <a class="secondary hollow button" href="contribute_online.html">
+              <span aria-hidden="true"><i class="fi-clipboard-notes"></i></span>
+              <span>Online Form</span>
+            </a>
+            <button class="secondary hollow button" data-open="phoneFormSection">
+              <span aria-hidden="true"><i class="fi-telephone"></i></span>
+              <span>Via Phone</span>
+            </button>
+            <br>
+            <button class="secondary hollow button" data-open="continueFormSection">
+              <!--<span aria-hidden="true"><i class="fi-bookmark"></i></span>-->
+              <span>Continue with your saved lineage</span>
+            </button>
+          </p>
+        </section>
+        <section class="reveal" id="phoneFormSection" data-reveal>
+          <div class="callout secondary">
+            <div class="row column">
+              <h4>Contribute via Phone</h4>
+              <p>Please fill out the form below to arrange a time to contribute a lineage with our staff over the phone.</p>
+            </div>
+            <form id="phoneForm" data-abide novalidate>
+              <div class="row">
+                <div class="medium-6 column">
+                  <label>First Name <small>Required</small>
+                    <input type="text" name="contributor-fName" required pattern="alpha">
+                    <span class="form-error">
+                      Required field. Alpha only.
+                    </span>
+                  </label>
+                </div>
+                <div class="medium-6 column">
+                  <label>Last Name <small>Required</small>
+                    <input type="text" name="contributor-lName" required pattern="alpha">
+                    <span class="form-error">
+                      Required field. Alpha only.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 column">
+                  <label>Email <small>Required</small>
+                    <input type="text" name="contributor-email" required pattern="email">
+                    <span class="form-error">
+                      Required field. Format: xyz@example.com
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 column">
+                  <label>Phone <small>Required</small>
+                    <input type="text" name="contributor-phone" required pattern="number">
+                    <span class="form-error">
+                      Required field. Numbers only.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 column">
+                  <label>Please tell us when we can contact you<small> Required</small>
+                    <input type="text" name="preferred-time" required>
+                    <span class="form-error">
+                      We'll contact you at a time of your convenience
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <input type="submit" value="Submit" class="button">
+                </div>
+              </div>
+            </form>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </section>
+        <section class="reveal" id="continueFormSection" data-reveal>
+          <div class="callout secondary">
+            <div class="row column">
+              <h4>Continue with a saved lineage</h4>
+              <p>Please provide the following information to find your previously saved lineage.</p>
+            </div>
+            <form action="#" data-abide novalidate>
+              <div class="row">
+                <div class="medium-6 column">
+                  <label>Your First Name <small>Required</small>
+                    <input type="text" name="contributor-fName" required pattern="alpha">
+                    <span class="form-error">
+                      Required field. Alpha only.
+                    </span>
+                  </label>
+                </div>
+                <div class="medium-6 column">
+                  <label>Your Last Name <small>Required</small>
+                    <input type="text" name="contributor-lName" required pattern="alpha">
+                    <span class="form-error">
+                      Required field. Alpha only.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 column">
+                  <label>Your Email <small>Required</small>
+                    <input type="text" name="contributor-email" required pattern="email">
+                    <span class="form-error">
+                      Required field. Format: xyz@example.com
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="small-12 column">
+                  <label>Artist's Date of Birth <small>Required</small>
+                    <input type="text" name="artist-dob" required pattern="date">
+                    <span class="form-error">
+                      Required field. Must be a valid date; format: YYYY-MM-DD.
+                    </span>
+                  </label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="column">
+                  <input type="submit" value="Submit" class="button">
+                </div>
+              </div>
+            </form>
+            <button class="close-button" data-close aria-label="Close modal" type="button">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <footer class="row">
+      <div>
+        <div class="medium-6 column">
+          <ul class="vertical medium-horizontal menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Help</a></li>
+          </ul>
+        </div>
+        <div class="medium-6 column">
+          <ul class="menu align-right">
+            <li class="menu-text"><small>Choreographic Lineage © 2015</small></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/foundation/6.2.1/foundation.min.js"></script>
+    <script src="../js/contribute.js"></script>
+
+  </body>
+</html>

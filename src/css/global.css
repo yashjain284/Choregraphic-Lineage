@@ -1,0 +1,32 @@
+body {
+  /*font-family: 'Asap', sans-serif;*/
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+header img {
+  /*width: 400px;*/
+  height: 150px;
+}
+
+nav {
+  background-color: darkgreen;
+  margin: 15px 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.5em;
+}
+
+nav a {
+  color: white;
+}
+
+nav a:hover,
+nav a:focus {
+  color: lightgray;
+}
+
+footer {
+  background-color: lightgray;
+}
