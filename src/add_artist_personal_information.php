@@ -217,11 +217,11 @@ if(isset($_SESSION['artist_profile_view'])){
 					</label>
 				</div>
 				<div class="medium-4 column" style="float:left !important;">
-					<label for="gender_other_text" id="gender_other_text_label">
+					<!-- <label for="gender_other_text" id="gender_other_text_label">
 						Please Specify Your Gender:
 						<input  autocomplete="off" type="text" id="gender_other_text" name="gender_other"
 						value="<?php echo isset($_SESSION['gender_other'])?$_SESSION['gender_other']:'' ?>" />
-					</label>
+					</label> -->
 				</div>
 			</fieldset>
 		</div>

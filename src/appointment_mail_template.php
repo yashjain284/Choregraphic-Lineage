@@ -4,7 +4,7 @@
     $from = "programmerspoint8@gmail.com";
     $to = "jay.shah144@gmail.com";
     $subject = "Appointment Confirmed with DCL";
-    $message = "Thank you for your interest in Choreographic Lineage. A team member will contact you soon to arrange a lineage appointment.";
+    $message = "\nThank you for your interest in Choreographic Lineage. A team member will contact you soon to arrange a lineage appointment.";
     $headers = "From:" . $from;
     
     // echo "Test email sent";

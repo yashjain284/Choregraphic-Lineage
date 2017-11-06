@@ -39,17 +39,20 @@
 					</div>
 				</div>
 				<div class="callout primary">
-					<h5>The Choreographic Lineage Team</h5>
-					<small>
-							Melanie Aceto, Director<br>
-							Dr Bina Ramamurthy, Data Scientist<br>
-							Renee Ruffino, Graphic Designer<br>
-							Domenic Licata, User Experience Designer<br>
-							Sarah Dodd, Undergraduate Student Research Assistant<br>
-							Sumedh Ambokar, Graduate Student Research Assistant<br>
-							Yash Jain, Graduate Student Research Assistant<br>
-							Jay Shah, Graduate Student Research Assistant<br>
-					</small>
+				<button class="accordion"><h5>The Choreographic Lineage Team</h5></button>
+					<div class="panel" style="display: none;">
+					  	<small>
+								Melanie Aceto, Director<br>
+								Dr Bina Ramamurthy, Data Scientist<br>
+								Renee Ruffino, Graphic Designer<br>
+								Domenic Licata, User Experience Designer<br>
+								Naila Ansari, Graduate student assistant<br>
+								Sumedh Ambokar, Graduate Student Research Assistant<br>
+								Yash Jain, Graduate Student Research Assistant<br>
+								Jay Shah, Graduate Student Research Assistant<br>
+								Barath Eswer, Graduate Student Research Assistant<br>
+						</small>
+					</div>
 				</div>
 			</aside>
 		</div>
@@ -61,6 +64,22 @@
 			</div>
 		</div>
 
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+    acc[i].onclick = function(){
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.display === "block") {
+            panel.style.display = "none";
+        } else {
+            panel.style.display = "block";
+        }
+    }
+}
+</script>
 <?php
 	include 'footer.php';
 ?>

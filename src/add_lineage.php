@@ -147,18 +147,18 @@ if(isset($_SESSION['artist_profile_view'])){
 																	<div class="large-5 columns">
 																		<legend><strong>Range:</strong></legend>
 																		<div class="row">
-																			<div class="medium-6 column">
+																			<div class="medium-8 column">
 																				<label>Start Date
-																					<input type="text" class="start_date" id="studied_start_date<?php echo '-'.$key ?>" name="studied_start_date[]" placeholder="yyyy-mm-dd"
+																					<input type="month" class="start_date" id="studied_start_date<?php echo '-'.$key ?>" name="studied_start_date[]" placeholder="yyyy-mm-dd"
 																						value="<?php echo (isset($_SESSION['studied_start_date'])?$_SESSION['studied_start_date'][$key]:'')?>"
 																					/>
 																				</label>
 																			</div>
 																		</div>
 																		<div class="row">
-																			<div class="medium-6 column">
+																			<div class="medium-8 column">
 																				<label>End Date
-																					<input type="text" class="end_date" id="studied_end_date<?php echo '-'.$key ?>" name="studied_end_date[]"  placeholder="yyyy-mm-dd"
+																					<input type="month" class="end_date" id="studied_end_date<?php echo '-'.$key ?>" name="studied_end_date[]"  placeholder="yyyy-mm-dd"
 																						value="<?php echo (isset($_SESSION['studied_end_date'])?$_SESSION['studied_end_date'][$key]:'')?>"
 																					/>
 																				</label>
@@ -321,7 +321,7 @@ if(isset($_SESSION['artist_profile_view'])){
 											      </div>
 											      <div class="tabs-panel influenced_by_section" id="panel4v<?php echo '-'.$key ?>">
 															<fieldset>
-																<legend><strong>Influenced By Details:</strong></legend>
+																<legend><strong>Influenced by Details:</strong></legend>
 																	<div class="row not_influenced" <?php echo isset($_SESSION["influenced_by"][$key])?"style='display:none'":""; ?>>
 																		<input class="relation_type" title="influenced" style="display:none"/>
 																		<div class="column">
@@ -336,7 +336,7 @@ if(isset($_SESSION['artist_profile_view'])){
 																			<div class="row">
 																				<center>
 																					<button class="primary button influenced_by" type="button" style="margin-top:5%">
-																						<span>Yes, I am Influenced</span>
+																						<span>Influenced by</span>
 																					</button>
 																				</center>
 																			</div>
@@ -549,7 +549,7 @@ if(isset($_SESSION['artist_profile_view'])){
 													</div>
 													<div class="tabs-panel influenced_by_section" id="panel4v-1">
 														<fieldset>
-															<legend><strong>Influenced By Details:</strong></legend>
+															<legend><strong>Influenced by Details:</strong></legend>
 															<div class="row not_influenced">
 																<input class="relation_type" title="influenced" style="display:none"/>
 																<div class="column">
@@ -564,7 +564,7 @@ if(isset($_SESSION['artist_profile_view'])){
 																	<div class="row">
 																		<center>
 																			<button class="primary button influenced_by" type="button" style="margin-top:5%">
-																				<span>Yes, I am Influenced</span>
+																				<span>Influenced by</span>
 																			</button>
 																		</center>
 																	</div>
@@ -720,7 +720,7 @@ if(isset($_SESSION['artist_profile_view'])){
 		clone.find(".relation_influenced_cb").val(lineal_artist_count - 1);
 		clone.find(".influenced_by_section").html(
 				"<fieldset>"
-			+	"<legend><strong>Influenced By Details:</strong></legend>"
+			+	"<legend><strong>Influenced by Details:</strong></legend>"
 			+	"<div class='row not_influenced'>"
 			+		"<input class='relation_type' title='influenced' style='display:none'/>"
 			+		"<div class='column'>"
@@ -735,7 +735,7 @@ if(isset($_SESSION['artist_profile_view'])){
 			+			"<div class='row'>"
 			+				"<center>"
 			+					"<button class='primary button influenced_by' type='button' style='margin-top:5%'>"
-			+						"<span>Yes, I am Influenced</span>"
+			+						"<span>Influenced by</span>"
 			+					"</button>"
 			+				"</center>"
 			+			"</div>"
@@ -958,6 +958,38 @@ if(isset($_SESSION['artist_profile_view'])){
 
 	$(document).foundation();
 </script>
+
+
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script type="text/javascript">
+$(function () {
+    $("#btnAdd").bind("click", function () {
+        var div = $("<div />");
+        div.html(GetDynamicTextBox(""));
+        $("#TextBoxContainer").append(div);
+    });
+    $("#btnGet").bind("click", function () {
+        var values = "";
+        $("input[name=DynamicTextBox]").each(function () {
+            values += $(this).val() + "\n";
+        });
+        alert(values);
+    });
+    $("body").on("click", ".remove", function () {
+        $(this).closest("div").remove();
+    });
+});
+function GetDynamicTextBox(value) {
+    return '<input name = "DynamicTextBox" type="text" value = "' + value + '" />&nbsp;' +
+            '<input type="button" value="Remove" class="remove" />'
+}
+</script>
+
+
+
+
 
 <?php
 include 'form_links_footer.php';

@@ -48,7 +48,7 @@
 						$count=mysql_num_rows($result);
 
 						if($count==0){
-							echo "<legend><strong>No artist profiles. Create a new one!</legend></strong>";
+							echo "<legend><strong>Create a new one!</legend></strong>";
 						}
 						else{
 							// echo "<legend><strong><h1>Artist Profiles</h1></legend></strong>";
@@ -72,15 +72,15 @@
 									echo "<td>".$resultant['artist_email_address']."</td>";
 									echo "<td>";
 										echo "<button class='secondary  hollow button' type='submit' name='artist_relation_add' value=".$resultant['artist_profile_id'].">";
-										echo "<span>Add Lineal Relationship</span>";
-										echo "</button>";
-
-										echo "<button class='success  hollow button' type='submit' name='artist_profile_view' value=".$resultant['artist_profile_id'].">";
-										echo "<span>View</span>";
+										echo "<span>Add Lineal Relationships</span>";
 										echo "</button>";
 
 										echo "<button class='primary hollow button' type='submit' name='artist_profile_edit' value=".$resultant['artist_profile_id'].">";
 										echo "<span>Edit</span>";
+										echo "</button>";
+										
+										echo "<button class='success  hollow button' type='submit' name='artist_profile_view' value=".$resultant['artist_profile_id'].">";
+										echo "<span>View</span>";
 										echo "</button>";
 
 										echo "<button class='alert  hollow button' type='submit' name='artist_profile_delete' value=".$resultant['artist_profile_id']." onclick='return confirmDelete();'>";

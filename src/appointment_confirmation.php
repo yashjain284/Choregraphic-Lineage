@@ -90,8 +90,8 @@ if(isset($_SESSION["user_email_address"])){
 		<div class="row">
 			<div class="small-12 medium-8 large-5 small-centered columns"> 
 				<h4 class="text-center">Having trouble or need to reschedule?</h4> 
-				<p class="text-center"> Contact us at:  <strong><a>+1(716) 645-0605</a></strong><br></p>
 			</div>
+			<p class="text-center"> Contact us at choreographiclineage@gmail.com &nbsp; OR &nbsp; <strong><a>+1(716) 645-0605</a></strong><br></p>
 		</div>
 		<div class="row">
 			<div class="button_container small-12 medium-8 large-2 small-centered columns"> 

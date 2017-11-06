@@ -60,7 +60,7 @@
 										}
 									?>
 								/>
-						    <label class="button" for="r2">I am contributing lineage for another artist</label>
+						    <label class="button" for="r2">I am contributing lineage for <br>another artist</label>
 							</div>
 						</div>
 					</div>

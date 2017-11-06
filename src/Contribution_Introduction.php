@@ -21,11 +21,11 @@ include 'util.php';
         represent the rich network of our field. You can complete your lineage over time by saving it and coming back to finish it when you are ready.</p>
       </div>
     </div>
-<!--     <div class="row">
+    <div class="row">
       <div class="column small-12">
-        <p>See the network up until now: <a href="#">http://www.choreagraphiclineage.buffalo.edu/Network/index.html</a></p>
+        <p>See the network: <a href="#">http://www.choreagraphiclineage.buffalo.edu/Network/index.html</a></p>
       </div>
-    </div> -->
+    </div>
     <!-- <div class="row" style="margin-bottom:5%">
       <div class="column small-6">
         <p>A Brief Description of Choreographic Lineage Project</p>
@@ -67,8 +67,11 @@ include 'util.php';
       if(contributionType=="form"){
         document.location.href = "<?php echo $path ?>"+"add_artist_profile.php";
       }
-      else{
+      else if (contributionType=="phone") {
         document.location.href = "<?php echo $path ?>"+"phone_contribution.php";
+      }
+      else{
+        document.location.href = "<?php echo $path ?>"+"add_artist_profile.php";
       }
     });
   </script>

@@ -30,7 +30,7 @@ include 'util.php';
 			<p><h3><strong>CONTRIBUTE YOUR LINEAGE BY PHONE</strong></h3></p>
 		</div>
 		<div class="row">
-			<h5>Please fill out the form below to set a suitable time for you, when we can call you.</h5>
+			<h5>Please fill out the form below so that we may contact you in order to arrange a time to gather your lineage.</h5>
 		</div>
 
 		<div class = "row">
@@ -68,8 +68,8 @@ include 'util.php';
 
 		<div class="row">
 			<div class="medium-4 column">
-				<label for="artist_email_address"><br>Notes
-					<textarea placeholder="Feel free to add a note to your appointment." rows="4" name="note" class="note" id="note"></textarea>
+				<label for="artist_email_address"><br>Send us a note
+					<textarea placeholder="" rows="4" name="note" class="note" id="note"></textarea>
 				</label>
 			</div>
 		</div>

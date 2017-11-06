@@ -40,10 +40,10 @@ else{
 		</div>
 		<div class="row">
 			<p>There are four types of lineal lines or <strong>Relationships:</strong></p>
-			<p><strong>1. DANCED FOR </strong> - Choregraphers for whom you have danced.<br>
+			<p>1. <strong>DANCED FOR </strong> - Choregraphers for whom you have danced.<br>
 			2. <strong>STUDIED WITH</strong> - Teachers with whom you have studied.<br>
 			3. <strong>COLLABORATED WITH</strong> - Artists with whom you have collborated.<br>
-			4. <strong>INFLUENCED BY </strong> - People who have significantly influenced your work, such as artists, authors, philosophers, etc.<br> You do not need to have a relationship with this person in order to list them as having an impact on your work.<br><br>
+			4. <strong>INFLUENCED BY </strong> - People who have significantly influenced your work, such as artists, authors, philosophers, etc. You do not need to have a <br> &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;relationship with this person in order to list them as having an impact on your work.<br><br>
 			<br><br>
 			<strong>Please click the "Next" button to contribute artist's lineage.</strong>
 			</p>
